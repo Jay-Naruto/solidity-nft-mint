@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {ethers, BigNumber} from "ethers"
-import roboPunksAbi from "../backend/artifacts/contracts/RoboPunks.sol/RoboPunks.json"
+import roboPunksAbi from "./RoboPunks.json"
 import { Button, Input } from '@chakra-ui/react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
