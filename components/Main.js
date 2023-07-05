@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loading from './Loading';
 // QmWRpy3tvQFVz9MijrGmkGrDjz8dDcaavyyLA7tV2T5FDk
 export default function Main({accounts,setAccounts}) {
-    const cA="0x58C0E5194881CdB16a9C3cAF79BD076Def40Fcf1"
+    const cA="0xe4B5814894486cc60a0bff0E9854fAf4FF499DEa"
     const [mintAmt,setMIntAmt]=useState(1)
     const isConnected = Boolean(accounts[0]);
     const [loading,setLoading]=useState(0)
@@ -57,7 +57,7 @@ export default function Main({accounts,setAccounts}) {
     setMIntAmt(mintAmt-1)
    }
    const handleIncr=()=>{
-    if (mintAmt >= 2) return;
+    if (mintAmt >= 50) return;
     setMIntAmt(mintAmt+1)
    }
   return (
