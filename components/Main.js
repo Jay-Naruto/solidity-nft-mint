@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loading from './Loading';
 // QmWRpy3tvQFVz9MijrGmkGrDjz8dDcaavyyLA7tV2T5FDk
 export default function Main({accounts,setAccounts}) {
-    const cA="0x98EC285C192Ff92a9e65A3f355D85933904beF46"
+    const cA="0x58C0E5194881CdB16a9C3cAF79BD076Def40Fcf1"
     const [mintAmt,setMIntAmt]=useState(1)
     const isConnected = Boolean(accounts[0]);
     const [loading,setLoading]=useState(0)
@@ -57,7 +57,7 @@ export default function Main({accounts,setAccounts}) {
     setMIntAmt(mintAmt-1)
    }
    const handleIncr=()=>{
-    if (mintAmt >= 3) return;
+    if (mintAmt >= 2) return;
     setMIntAmt(mintAmt+1)
    }
   return (
@@ -67,7 +67,9 @@ export default function Main({accounts,setAccounts}) {
             <Loading/>:null
         }
         <h1>RoboPunks</h1>
-        <p>Max Supply 5</p>
+        <p>Max Supply 100</p>
+        <p>Per wallet mint 2</p>
+
        
         {
             isConnected ?
